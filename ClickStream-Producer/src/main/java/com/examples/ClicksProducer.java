@@ -29,7 +29,7 @@ public class ClicksProducer {
         }
 
         // Create Kafka producer
-        KafkaProducer<String, Clicks> producer = producer = new KafkaProducer<>(properties);
+        KafkaProducer<String, Clicks> producer = new KafkaProducer<>(properties);
 
         /// delete existing topic with the same name
         deleteTopic(topic, properties);
